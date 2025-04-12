@@ -293,7 +293,9 @@ async def leaderboard(interaction: discord.Interaction):
 # --- Run the Bot ---
 bot_token = os.getenv(
     "MTFKR")  # Add your token to .env or environment variable
-   from keep_alive import keep_alive
+    
+from keep_alive import keep_alive
 
 keep_alive()  # Starts the web server
 bot.run(bot_token)  # Starts the bot
+
